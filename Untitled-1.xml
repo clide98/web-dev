@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title> FORMS IN HTML</title>
+        </head>
+        <body>
+            <form action="data.php" method="get" enctype="application/x-www-form-urlencoded">
+                <label for="">Name: </label>
+                <input type="text" id="name" name="name" placeholder="Clyde Sam" required>
+                <br>
+                <label for="mobile number">Mobile Number: </label>
+                <input type="number" id="mobile" min="0" max="1000" name="mobile" placeholder="0123456789">
+                <br>
+                <label for="email">Email Address: </label>
+                <input type="email" id="email_address" name="email_address" placeholder="clidesam@mail">
+                <br>
+                <label for="password">Password: </label>
+                <input type="password" maxlength="18" minlength="6" id="password" name="password">
+                <br>
+                <label for="bio">Bio: </label>
+                <textarea id="bio" rows= "10" cols="30">
+                    Please type in your bio here...
+                </textarea>
+                <br>
+                <Input type= "checkbox" id="Math" name="Math" value="Math">
+                <label for="math">Math</label>
+                <br>
+                <Input type= "checkbox" id="Geography" name="Geography" value="Geography">
+                <label for="Geography">Geography</label>
+                <br>
+                <Input type= "checkbox" id="English" name="English" value="English">
+                <label for="English">English</label>
+                <br>
+                <fieldset>
+                    <legend> Gender: </legend>
+                        <Input type= "radio" id="male" name="gender" value="Male">
+                        <label>Male: </label>
+                        <Input type= "radio" id="Female" name="gender" value="Female">
+                        <label>Female: </label>
+                </fieldset>
+                <br>
+                <label for="lesson">Lesson location: </label>
+                <select id="lesson" name="lesson" multiple>
+                    <option value=""></option>
+                    <option value="Online">Online</option>
+                    <option value="Physical">Physical</option>
+                </select>
+                <br>
+                <label for="passport_photo">Passport Photo</label>
+                <Input type= "file" id="passport_photo" name="passport_photo" accept="jpg,png">
+                <input type="hidden" id="token" name="token" value="26509xyz107">
+                <br>
+                <input type="button" id="ok" name="ok" value="OK">
+                <br>
+                <input type="reset" id="reset" name="reset" value="Reset">
+                <input type="submit" id="submit" name="submit" value="submit">
+            </form>
+        </body>
+    </html>
